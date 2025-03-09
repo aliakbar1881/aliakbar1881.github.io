@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدل توزیع شده</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .hero-section {
+            background: url('images/dist_model_bg.png') center center/cover;
+            height: 100vh;
+            color: white;
+        }
+        .feature-icon {
+            font-size: 3rem;
+            color: #0d6efd;
+        }
+        .project-card {
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+        .footer {
+            background-color: #f8f9fa;
+        }
+        html {
+            font-family: 'Vazir', sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #202013;
+        }
+        html[lang="fa"] {
+            font-family: 'Vazir', sans-serif !important; /* Ensure Persian text uses this font */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">مدل توزیع شده</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">توصیف</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">ویژگی ها</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">گام نما</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">ارتباط با ما</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero-section d-flex align-items-center">
+    <div class="container text-center">
+        <h1 class="display-3 mb-4">مدل توزیع شده</h1>
+        <p class="lead mb-5">این مدل سعی میکند وابستگی خود را به هژمونی داده و سخت افزار کم کند.</p>
+        <a href="#features" class="btn btn-primary btn-lg">بیشتر بدانید</a>
+    </div>
+</header>
+
+<!-- Features Section -->
+<section id="features" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">ویژگی ها</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="feature-icon text-center mb-3">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3 class="h4 mb-3">عدم وابستگی به تجمیع سخت افزار</h3>
+                <p>با توجه به گلوگاه شدن سخت افزار در دنیای کنونی و تحریم کشور های فاقد وجود این تکنولوژی خروج از زمین بازی طراحی شده توسط صاحبان این فناوری این ضرورت را ایجاب میکند</p>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-icon text-center mb-3">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <h3 class="h4 mb-3">عدم وابستگی به داده های از پیش اموزش دیده مدل</h3>
+                <p>مسیله مهمی که در مدل های زبانی وجود دارد موضوع نبود امکان بروز رسانی دانش نسبت به گذشته است. این مدل این چالش را حل کرده است.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-icon text-center mb-3">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="h4 mb-3">توزیع فرایند استنتاج</h3>
+                <p>ارمان ما این است که هر فرد بتواند به اندازه توان خود در فرایند کار های اجتماعی و تعاون در حد توان خود تصرف کند. در اینجا هر موجودیتی در حدی که میتواند میتواند در کارکرد این مدل دخیل باشد.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">گام نمای پروژه</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card">
+                    <img src="project1.jpg" class="card-img-top" alt="مدل توزیع شده">
+                    <div class="card-body">
+                        <h5 class="card-title">منبع پیاده سازی شده مدل</h5>
+                        <p class="card-text">ادرس گیت هاب</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for other projects -->
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">هدف پروژه</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="testimonial p-4">
+                                <p class="lead">"از بین بردن تراکم اطلاعات و فناوری در نقطه ای خاص به نحوی مقابله با نظام سرمایه داری."</p>
+                                <footer class="blockquote-footer">پروژه به نتیجه رسیده است.</footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more testimonials -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-5 bg-primary text-white">
+    <div class="container text-center">
+        <h2>ایا میخواهید در توسعه این پروژه مشارکت کنید؟</h2>
+        <p class="lead">منتظریم</p>
+        <a href="#contact" class="btn btn-light btn-lg mt-3">ارتباط با ما</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="#" class="text-decoration-none me-3"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-decoration-none me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-decoration-none"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
