@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>توضیح‌پذیری هوش‌مصنوعی</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .progress-container { 
+            background-color: rgba(208, 186, 150, 0.248); 
+            width: 80%; 
+            border-radius: 15px;
+            margin: auto;
+        } 
+  
+        .progress { 
+            background-color: rgb(0, 160, 24); 
+            color: rgb(255, 255, 255);
+            line-height: 10%;
+            padding: 5%; 
+            font-size: 15px; 
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .hero-section {
+            background: url('images/dist_model_bg.png') center center/cover;
+            height: 100vh;
+            color: rgb(255, 255, 255);
+        }
+        .feature-icon {
+            font-size: 3rem;
+            color: #0d6efd;
+        }
+        .project-card {
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+        .footer {
+            background-color: #f8f9fa;
+        }
+        html {
+            font-family: 'Vazir', sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #202013;
+        }
+        html[lang="fa"] {
+            font-family: 'Vazir', sans-serif !important; /* Ensure Persian text uses this font */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">توضیح‌پذیری هوش‌مصنوعی</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">توصیف</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">ویژگی ها</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">گام نما</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">ارتباط با ما</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero-section d-flex align-items-center">
+    <div class="container text-center">
+        <h1 class="display-3 mb-4">توضیح‌پذیری هوش‌مصنوعی</h1>
+        <p class="lead mb-5">سیستمی برای افزایش آگاهی و کنترل کاربر در فرآیند استنتاج مدل.</p>
+        <a href="#features" class="btn btn-light btn-lg rounded-pill px-5">بیشتر بدانید</a>
+
+    </div>
+</header>
+
+<!-- Features Section -->
+<section id="features" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">ویژگی ها</h2>
+        <div class="row g-4">
+            <div class="col-md-4 text-center">
+                <div class="feature-icon text-center mb-3">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <h3 class="h4 mb-3">شفافیت در استنتاج</h3>
+                <p>  ‌تولید مدل‌هایی که به صورت پیش‌فرض افزایش اطلاع کاربر از جزئیات فرایند آموزش و استنتاج را در نظر می‌گیرند.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="feature-icon text-center mb-3">
+                    <i class="fas fa-pen"></i>
+                </div>
+                <h3 class="h4 mb-3">امکان تغییر در فرایند استنتاج</h3>
+                <p>ایجاد امکان تغییر در ابعاد مختلف تصمیم‌گیری مدل مانند انتخاب داده‌ها یا ویژگی‌های تاثیرگذار در خروجی مدل.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="feature-icon text-center mb-3">
+                    <i class="fas fa-gauge-high"></i>
+                </div>
+                <h3 class="h4 mb-3">بازده و کارایی بالا</h3>
+                <p>ارتقا و یا حفظ سرعت و دقت مدل توضیح‌پذیر در عین ایجاد امکان توضیح‌پذیری، و عبور از دوگانه‌ی شفافیت در مقابل کارایی.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">گام‌نمای پروژه</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="h4 mb-3">هوش‌مصنوعی توضیح‌پذیر بالفعل</h5>
+                        <p class="card-text">ترکیبی از یادگیری عمیق و یادگیری تنبل به ما اجازه‌ی دخالت در داده‌های تاثیرگذار را میدهد.</p>
+                        <div class="container text-center justify-content: center">
+                            وضعیت پیشرفت
+                            <div class="progress-container">
+                                <div class="progress" style="width: 80%; padding-right: 40%;">
+                                    ۸۰٪
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            <ul style="list-style-type: '✅ ' ;">
+                                <li>  توضیح‌پذیری با پیدا کردن سهم تاثیر هر نمونه در داده‌های آموزش  </li>
+                                <li> امکان ایجاد تغییر در سهم تاثیر هر نمونه بدون نیاز به آموزش مجدد مدل </li>
+                                <li>  مد‌های پیش‌بینی کننده </li>
+                            </ul>
+                            <ul style="list-style-type: ' ⏳ ' ;">
+                                <li> مدل‌های مولد </li>
+                            </ul>
+                        </p>
+                        
+                        میتوانید نمونه‌ی کد این پروژه را در این صفحه ببینید و آزمایش کنید:
+                        <a href="https://github.com/aliakbar1881/IpsofactoModel">
+                            <p class="card-text">ادرس گیت هاب</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for other projects -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="h4 mb-3"> توضیح‌پذیری بالفعل با داده‌های خوشه‌ای</h5>
+                        <p class="card-text">ترکیب مدل‌های RAG با مدل‌های توضیح‌پذیر بالفعل برای سرعت و شخصی‌سازی. </p>
+                        <div class="container text-center justify-content: center">
+                            وضعیت پیشرفت
+                            <div class="progress-container">
+                                <div class="progress" style="width: 10%; padding-right: 2%;">
+                                    ۰٪
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            <ul style="list-style-type: ' ⏳ ' ;">
+                                <li> پیاده سازی الگوریتم جستجوی سریع در پایگاه داده </li>
+                                <li> توضیح‌پذیری بالفعل با استفاده از داده‌های نزدیک </li>
+                                <li> استفاده از الگوریتم‌های جستجوی سریع (مانند KNN) در آموزش و استنتاج با در نظر گرفتن سهم اهمیت (و نه لزوماً شباهت و نزدیکی) </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for other projects -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="h4 mb-3"> مدل‌های عمیق با یادگیری تنبل </h5>
+                        <p class="card-text">پیاده‌سازی یادگیری تنبل با شبکه‌های عصبی عمیق و جداسازی اطلاعات از پردازش شبکه. </p>
+                        <div class="container text-center justify-content: center">
+                            وضعیت پیشرفت
+                            <div class="progress-container">
+                                <div class="progress" style="width: 30%; padding-right: 12%;">
+                                    ۳۰٪
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            <ul style="list-style-type: '✅ ' ;">
+                                <li> ترکیب غیر خطی داده‌ها در فرایند استنتاج </li>
+                            </ul>
+                            <ul style="list-style-type: ' ⏳ ' ;">
+                                <li> آموزش محلی بر روی داده‌ها در فرایند استنتاج </li>
+                                <li> (بهینه برای مدل های دیفیوژن) یادگیری تنبل برای وزن‌های مدل </li>
+                            </ul>
+                        </p>
+                        میتوانید نمونه‌ی کد این پروژه را در این صفحه ببینید و آزمایش کنید:
+                        <a href="">
+                            <p class="card-text">به زودی</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for other projects -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="h4 mb-3"> توضیح بالفعل بر روی ویژگی‌های ورودی </h5>
+                        <p class="card-text">تبدیل مدل‌های بالفعل به مدل‌هایی با قابلیت تشخیص و تغییر در سطح تاثیر ویژگی‌های داده‌ی ورودی. </p>
+                        <div class="container text-center justify-content: center">
+                            وضعیت پیشرفت
+                            <div class="progress-container">
+                                <div class="progress" style="width: 10%; padding-right: 2%;">
+                                    ۰٪
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            <ul style="list-style-type: ' ⏳ ' ;">
+                                <li> استفاده از مدل ViT بر روی داده‌های تصویری </li>
+                                <li> مدل‌های autoregressive </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for other projects -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="h4 mb-3"> شرطی خلاف واقع برای افزایش سهم تأثیر  </h5>
+                        <p class="card-text">استفاده از مشتقات سهم تأثیر برای نمونه‌ی خلاف واقع با کاربرد‌های poisonning، re-biassing، dataset summaries. </p>
+                        <div class="container text-center justify-content: center">
+                            وضعیت پیشرفت
+                            <div class="progress-container">
+                                <div class="progress" style="width: 10%; padding-right: 2%;">
+                                    ۰٪
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            <ul style="list-style-type: ' ⏳ ' ;">
+                                <li> حملات adversarial بر روی داده‌‌های ورودی و تغییر در تاثیر داده‌های آموزش</li>
+                                <li> حملات adversarial بر روی داده‌‌های آموزش و تغییر در عمکرد مدل</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for other projects -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="h4 mb-3"> تخمین سهم‌تاثیر با استفاده از اندازه‌گیری قطعیت  </h5>
+                        <p class="card-text"> محاسبه‌ی سهم تاثیر عملیات سنگین مشتق درجه‌ی دوم روی پارامتر‌های مدل را دارد که بسیار زمان‌بر و جاگیر است. با توجه به روش‌های خلاقانه  وسریع در زمینه‌ی تخمین قطعیت وجود دارد، ترکیب این دو روش می‌تواند روش بهینه‌ای برای محاسبه‌ی سهم‌تاثیر را ارائه کند. </p>
+                        <div class="container text-center justify-content: center">
+                            وضعیت پیشرفت
+                            <div class="progress-container">
+                                <div class="progress" style="width: 10%; padding-right: 2%;">
+                                    ۰٪
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            <ul style="list-style-type: ' ⏳ ' ;">
+                                <li> روش‌ (های) بهینه برای تخمین قطعیت. مانند ensemble ها و یا dropout.</li>
+                                <li> ترکیب قطعیت و مشتقات ورودی برای تخمین Hessian-vector product و Influence function</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat for other projects -->
+            
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">دورنمای پروژه</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="testimonial p-4">
+                                <p class="lead">در این پروژه، توانسته‌ایم نشان دهیم که استنتاج مدل نه‌تنها قابل توضیح به کاربر است، بلکه به‌صورت بالفعل می‌توان فرایند آن را شفاف‌سازی کرد. همچنین، امکان ورود اراده‌ی کاربر به جریان استنتاج هوش مصنوعی را فراهم کرده‌ایم، به‌ویژه در مرحله‌ی انتخاب داده‌های تأثیرگذار. این رویکرد در حال گسترش به سایر بخش‌های فرایند استنتاج نیز هست.
+
+                                    هدف ما این است که ابزارهای جدید جایگزین متخصصان انسانی نشوند، بلکه بتوانند از طریق تعامل مؤثر با کاربر، تصمیم‌گیری را بهبود بخشند. برای تحقق این امر، ابزار طراحی‌شده باید بتواند اراده و تصمیمات کاربر را در چارچوبی ساختاریافته مدل‌سازی کرده و در استنتاج لحاظ کند. این امر به لطف شفافیت در استنتاج مدل محقق می‌شود و لازم است که این شفافیت در ابعاد دیگر نیز گسترش یابد، ازجمله در نحوه‌ی تغییرات داده‌های آموزشی و ارزیابی مدل.
+                                    
+                                    با این رویکرد، به سمت سیستمی حرکت می‌کنیم که نه‌تنها دقت و کارایی استنتاج را بهبود می‌بخشد، بلکه تعامل انسانی را نیز در قلب فرایند تصمیم‌گیری حفظ می‌کند.
+                                    
+                                    .</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-5 bg-primary text-white">
+    <div class="container text-center">
+        <h2>ایا میخواهید در توسعه این پروژه مشارکت کنید؟</h2>
+        <p class="lead">منتظریم</p>
+        <a href="#contact" class="btn btn-light btn-lg mt-3">ارتباط با ما</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="#" class="text-decoration-none me-3"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-decoration-none me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-decoration-none"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
