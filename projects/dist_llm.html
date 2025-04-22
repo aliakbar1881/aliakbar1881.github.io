@@ -3,16 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مدل توزیع شده</title>
+    <title>موازی‌سازی پردازش مدل‌ها </title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
+        .progress-container { 
+            background-color: rgba(208, 186, 150, 0.248); 
+            width: 80%; 
+            border-radius: 15px;
+            margin: auto;
+        } 
+  
+        .progress { 
+            background-color: rgb(0, 160, 24); 
+            color: rgb(255, 255, 255);
+            line-height: 10%;
+            padding: 5%; 
+            font-size: 15px; 
+            border-radius: 15px;
+            text-align: center;
+        }
+
         .hero-section {
             background: url('images/dist_model_bg.png') center center/cover;
             height: 100vh;
-            color: white;
+            color: rgb(255, 255, 255);
         }
         .feature-icon {
             font-size: 3rem;
@@ -43,7 +60,7 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-        <a class="navbar-brand" href="#">مدل توزیع شده</a>
+        <a class="navbar-brand" href="#">موازی‌سازی پردازش مدل‌ها </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -59,19 +76,20 @@
                     <a class="nav-link" href="#portfolio">گام نما</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">دور نما</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#contact">ارتباط با ما</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-
-<!-- Hero Section -->
 <header class="hero-section d-flex align-items-center">
     <div class="container text-center">
-        <h1 class="display-3 mb-4">مدل توزیع شده</h1>
-        <p class="lead mb-5">این مدل سعی میکند وابستگی خود را به هژمونی داده و سخت افزار کم کند.</p>
-        <a href="#features" class="btn btn-primary btn-lg">بیشتر بدانید</a>
+        <h1 class="display-3 mb-4">موازی‌سازی پردازش مدل‌ها </h1>
+        <p class="lead mb-5">سیستمی برای افزایش آگاهی و کنترل کاربر در فرآیند استنتاج مدل.</p>
+        <a href="#features" class="btn btn-light btn-lg rounded-pill px-5">بیشتر بدانید</a>
     </div>
 </header>
 
@@ -80,27 +98,31 @@
     <div class="container">
         <h2 class="text-center mb-5">ویژگی ها</h2>
         <div class="row g-4">
-            <div class="col-md-4">
+            
+            <div class="col-md-4 text-center">
                 <div class="feature-icon text-center mb-3">
-                    <i class="fas fa-rocket"></i>
+                    <i class="fas fa-eye"></i>
                 </div>
                 <h3 class="h4 mb-3">عدم وابستگی به تجمیع سخت افزار</h3>
                 <p>با توجه به گلوگاه شدن سخت افزار در دنیای کنونی و تحریم کشور های فاقد وجود این تکنولوژی خروج از زمین بازی طراحی شده توسط صاحبان این فناوری این ضرورت را ایجاب میکند</p>
             </div>
-            <div class="col-md-4">
+            
+            <div class="col-md-4 text-center">
                 <div class="feature-icon text-center mb-3">
-                    <i class="fas fa-cogs"></i>
+                    <i class="fas fa-pen"></i>
                 </div>
                 <h3 class="h4 mb-3">عدم وابستگی به داده های از پیش اموزش دیده مدل</h3>
                 <p>مسیله مهمی که در مدل های زبانی وجود دارد موضوع نبود امکان بروز رسانی دانش نسبت به گذشته است. این مدل این چالش را حل کرده است.</p>
             </div>
-            <div class="col-md-4">
+            
+            <div class="col-md-4 text-center">
                 <div class="feature-icon text-center mb-3">
-                    <i class="fas fa-shield-alt"></i>
+                    <i class="fas fa-gauge-high"></i>
                 </div>
                 <h3 class="h4 mb-3">توزیع فرایند استنتاج</h3>
                 <p>ارمان ما این است که هر فرد بتواند به اندازه توان خود در فرایند کار های اجتماعی و تعاون در حد توان خود تصرف کند. در اینجا هر موجودیتی در حدی که میتواند میتواند در کارکرد این مدل دخیل باشد.</p>
             </div>
+            
         </div>
     </div>
 </section>
@@ -108,18 +130,137 @@
 <!-- Portfolio Section -->
 <section id="portfolio" class="py-5 bg-light">
     <div class="container">
-        <h2 class="text-center mb-5">گام نمای پروژه</h2>
+        <h2 class="text-center mb-5">گام‌نمای پروژه</h2>
         <div class="row g-4">
+            
             <div class="col-md-6 col-lg-4">
                 <div class="card project-card">
-                    <img src="project1.jpg" class="card-img-top" alt="مدل توزیع شده">
                     <div class="card-body">
-                        <h5 class="card-title">منبع پیاده سازی شده مدل</h5>
-                        <p class="card-text">ادرس گیت هاب</p>
+                        <h5 class="h4 mb-3">موازی‌سازی پردازش مدل‌ها روی شبکه</h5>
+                        <p class="card-text">با استفاده از موازی سازی پردازش مدل‌ها روی شبکه میتوان از منابع  (inference) مدل‌ها استفاده کرد که دیگر نیازی به مرکز گرا بودن این فرایند نباشد. مثلاَ شروع با مدل‌های Transformer.</p>
+                        <div class="container text-center justify-content: center">
+                            وضعیت پیشرفت
+                            <div class="progress-container">
+                                <div class="progress" style="width: 80%; padding-right: 80%;">
+                                    80
+
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            <ul style="list-style-type: '✅ ' ;">
+                                
+                                <li>موازی سازی پردازش مدل ها</li>
+                                
+                            </ul>
+                            <ul style="list-style-type: ' ⏳ ' ;">
+                                
+                                <li>مدل‌های مولد</li>
+                                
+                            </ul>
+                        </p>
+                        <a href="https://github.com/aliakbar1881/IpsofactoModel">
+                            <p class="card-text">ادرس گیت هاب</p>
+                        </a>
                     </div>
                 </div>
             </div>
-            <!-- Repeat for other projects -->
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="h4 mb-3">استفاده از منابع توزیع شده</h5>
+                        <p class="card-text">پیاده سازی پلتفرمی برای توسعه آموزش مدل های توزیع شده بر روی شبکه ماند Keras، Torch، SparkML که آموزش در لحظه را در اختیار محققان و کاربران بگذارد. </p>
+                        <div class="container text-center justify-content: center">
+                            وضعیت پیشرفت
+                            <div class="progress-container">
+                                <div class="progress" style="width: 0%; padding-right: 0%;">
+                                    0
+
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            <ul style="list-style-type: '✅ ' ;">
+                                
+                            </ul>
+                            <ul style="list-style-type: ' ⏳ ' ;">
+                                
+                                <li>پیاده سازی پلتفرمی برای توسعه آموزش مدل های توزیع شده</li>
+                                
+                            </ul>
+                        </p>
+                        <a href="">
+                            <p class="card-text">ادرس گیت هاب</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="h4 mb-3">بالا بردن ظرفیت خطای ورودی مدل در شبکه متزلزل</h5>
+                        <p class="card-text">بالا بردن توانایی تعمیم پذیری مناسب و ترکیب مناسب داده‌ها مثلاَ با استفاده‌ی روشی مشابه dropout.</p>
+                        <div class="container text-center justify-content: center">
+                            وضعیت پیشرفت
+                            <div class="progress-container">
+                                <div class="progress" style="width: 0%; padding-right: 0%;">
+                                    0
+
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            <ul style="list-style-type: '✅ ' ;">
+                                
+                            </ul>
+                            <ul style="list-style-type: ' ⏳ ' ;">
+                                
+                                <li>ترکیب مناسب داده‌ها</li>
+                                
+                                <li>بالا بردن توانایی تعمیم پذیری</li>
+                                
+                            </ul>
+                        </p>
+                        <a href="">
+                            <p class="card-text">ادرس گیت هاب</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="h4 mb-3">امنیت داده‌ها با پردازش توزیع‌شده</h5>
+                        <p class="card-text">آنالیز انکشاف در داده‌های مدل‌های توزیع ‌شده روش شبکه و بررسی امکان بالا بردن سطح خصوصی داده‌ها، مانند روش Differential provacy.</p>
+                        <div class="container text-center justify-content: center">
+                            وضعیت پیشرفت
+                            <div class="progress-container">
+                                <div class="progress" style="width: 0%; padding-right: 0%;">
+                                    0
+
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            <ul style="list-style-type: '✅ ' ;">
+                                
+                            </ul>
+                            <ul style="list-style-type: ' ⏳ ' ;">
+                                
+                                <li>استفاده از  روش Differential provacy</li>
+                                
+                            </ul>
+                        </p>
+                        <a href="">
+                            <p class="card-text">ادرس گیت هاب</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
 </section>
@@ -127,31 +268,26 @@
 <!-- Testimonials -->
 <section class="py-5">
     <div class="container">
-        <h2 class="text-center mb-5">هدف پروژه</h2>
+        <h2 class="text-center mb-5">دورنمای پروژه</h2>
         <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="row justify-content-center">
                         <div class="col-md-8">
                             <div class="testimonial p-4">
-                                <p class="lead">"از بین بردن تراکم اطلاعات و فناوری در نقطه ای خاص به نحوی مقابله با نظام سرمایه داری."</p>
-                                <footer class="blockquote-footer">پروژه به نتیجه رسیده است.</footer>
+                                <p class="lead">در این پروژه، توانسته‌ایم نشان دهیم که استنتاج مدل نه‌تنها قابل توضیح به کاربر است، بلکه به‌صورت بالفعل می‌توان فرایند آن را شفاف‌سازی کرد. .
+
+هدف ما این است که ابزارهای جدید جایگزین متخصصان انسانی نشوند، بلکه بتوانند از طریق تعامل مؤثر با کاربر، تصمیم‌گیری را بهبود بخشند. برای تحقق این امر، ابزار طراحی‌شده باید بتواند اراده و تصمیمات کاربر را در چارچوبی ساختاریافته مدل‌سازی کرده و در استنتاج لحاظ کند. این امر به لطف شفافیت در استنتاج مدل محقق می‌شود و لازم است که این شفافیت در ابعاد دیگر نیز گسترش یابد، ازجمله در نحوه‌ی تغییرات داده‌های آموزشی و ارزیابی مدل.
+
+با این رویکرد، به سمت سیستمی حرکت می‌کنیم که نه‌تنها دقت و کارایی استنتاج را بهبود می‌بخشد، بلکه تعامل انسانی را نیز در قلب فرایند تصمیم‌گیری حفظ می‌کند.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Add more testimonials -->
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </button>
         </div>
     </div>
 </section>
-
 <!-- Call to Action -->
 <section class="py-5 bg-primary text-white">
     <div class="container text-center">
