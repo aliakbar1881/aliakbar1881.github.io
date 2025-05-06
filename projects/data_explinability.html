@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>توضیح‌ داده</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .progress-container { 
+            background-color: rgba(208, 186, 150, 0.248); 
+            width: 80%; 
+            border-radius: 15px;
+            margin: auto;
+        } 
+  
+        .progress { 
+            background-color: rgb(0, 160, 24); 
+            color: rgb(255, 255, 255);
+            line-height: 10%;
+            padding: 5%; 
+            font-size: 15px; 
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .hero-section {
+            background: url('images/dist_model_bg.png') center center/cover;
+            height: 100vh;
+            color: rgb(255, 255, 255);
+        }
+        .feature-icon {
+            font-size: 3rem;
+            color: #0d6efd;
+        }
+        .project-card {
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+        .footer {
+            background-color: #f8f9fa;
+        }
+        html {
+            font-family: 'Vazir', sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #202013;
+        }
+        html[lang="fa"] {
+            font-family: 'Vazir', sans-serif !important; /* Ensure Persian text uses this font */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">توضیح‌ داده</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">توصیف</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">ویژگی ها</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">گام نما</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">دور نما</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">ارتباط با ما</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero-section d-flex align-items-center">
+    <div class="container text-center">
+        <h1 class="display-3 mb-4">توضیح‌ داده</h1>
+        <p class="lead mb-5">سیستمی برای مدل‌سازی داده و ره‌گیری جریان اطلاعات در دادگان.</p>
+        <a href="#features" class="btn btn-light btn-lg rounded-pill px-5">بیشتر بدانید</a>
+
+    </div>
+</header>
+
+<!-- Features Section -->
+<section id="features" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">ویژگی ها</h2>
+        <div class="row g-4">
+            <div class="col-md-4 text-center">
+                <div class="feature-icon text-center mb-3">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <h3 class="h4 mb-3">شفافیت در ارجاع</h3>
+                <p>  ریشه یابی داده‌های تاثیر برای توجیح هر کدام از داده‌ها.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="feature-icon text-center mb-3">
+                    <i class="fas fa-pen"></i>
+                </div>
+                <h3 class="h4 mb-3">ارزش‌گذاری داده </h3>
+                <p>ایجاد امکان ارزش‌گذاری دادگان به واسطه‌ی معیار‌های مشخص و کنترل جریان داده با در نظر گرفتن ارزش‌ها.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="feature-icon text-center mb-3">
+                    <i class="fas fa-gauge-high"></i>
+                </div>
+                <h3 class="h4 mb-3">بازده و کارایی بالا</h3>
+                <p>جستجوی معنادار در داده و تناسب سنجی بهینه بین داده‌گان.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">گام‌نمای پروژه</h2>
+        <div class="row g-4">
+
+            <!-- Repeat for other projects -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="h4 mb-3">کشف روابط در پایگاه داده به وسیله‌ی مدل</h5> <p class="card-text">پیدا کردن روابط در پایگاه داده؛ مثلاَ استفاده از مدل زبانی برای کشف رابطه‌ی استناد بین داده‌ها. </p><div class="container text-center justify-content: center">وضعیت پیشرفت <div class="progress-container"><div class="progress" style="width:20%; padding-right: 10%;">۲۰٪</div></div></div><p><ul style="list-style-type: '✅ ' ;"><li>نمونه‌ی اولیه کشف تاثیر با داده‌های MNIST.</li><li>نمونه‌ی اولیه کشف روابط با داده‌های MNIST.</li></ul><ul style="list-style-type: '⏳ ' ;"><li>توضیح‌پذیری مدل زبانی برای کشف تاثیر اطلاعات دادگان بر یکدیگر</li><li>جستجوی گراف متون بر اساس روابط تاثیر</li></ul></p><a href="https://github.com/siavashBigdeli/marginalized_sample_influence"><p class="card-text">آدرس گیت هاب</p></a></div></div></div> 
+<!-- Repeat for other projects -->
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="h4 mb-3">خلاصه سازی شرطی در پایگاه داده</h5> <p class="card-text">آیا میتوان به صورت سلسله وار از مدل‌های مولد استفاده کرد و در هر مرحله با ترکیب خروجی با داده‌های دیگر خلاصه سازی نمود؟‍ </p><div class="container text-center justify-content: center">وضعیت پیشرفت <div class="progress-container"><div class="progress" style="width:30%; padding-right: 15%;">۳۰٪</div></div></div><p><ul style="list-style-type: '✅ ' ;"><li>مدل زبانی بر پایه RAG</li><li>ترکیب داده‌های یک مرحله‌ای</li></ul><ul style="list-style-type: '⏳ ' ;"><li>ترکیب داده‌های چند مرحله‌ای</li></ul></p></div></div></div> 
+<!-- Repeat for other projects -->
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="h4 mb-3">تخمین ارزش‌گذاری متن برا اساس معیار</h5> <p class="card-text">سنجش میزان هماهنگی و شباهت متون با متن‌های معیار که از جانب متخصص آگاه تعیین شده‌اند. </p><div class="container text-center justify-content: center">وضعیت پیشرفت <div class="progress-container"><div class="progress" style="width:50%; padding-right: 25%;">۵۰٪</div></div></div><p><ul style="list-style-type: '✅ ' ;"><li>مهندسی پرامپت برای تخمین ارزش</li><li>مدل‌های دسته بندی ارزشی</li></ul><ul style="list-style-type: '⏳ ' ;"><li>مدل‌های بالفعل ارزش سنجی</li><li>مدل‌های منعطف با ارزش‌های جدید</li></ul></p><a href="https://github.com/siavashBigdeli/prompt_engineering_questioner"><p class="card-text">آدرس گیت هاب</p></a></div></div></div> 
+<!-- Repeat for other projects -->
+  <!-- Repeat for other projects -->
+            
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">دورنمای پروژه</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="testimonial p-4">
+                                <p class="lead">
+                                    دادگان کنونی در فضای دیجیتال بسیار منقطع (fragmented)  از یکدیگر هستند و ریشه‌یابی روند تولید دانش و اطلاع بسیار پیچیده، اگر نه غیر ممکن، شده.
+                                    ما به دنبال رهیافتهای محاسباتی برای بر گرداندن شناخت تاریخی از دادگان هستیم که به کاربر اجازه بدهد داده‌ها را بر اساس روند مورد علاقه چینش کند.
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-5 bg-primary text-white">
+    <div class="container text-center">
+        <h2>ایا میخواهید در توسعه این پروژه مشارکت کنید؟</h2>
+        <p class="lead">منتظریم</p>
+        <a href="#contact" class="btn btn-light btn-lg mt-3">ارتباط با ما</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="#" class="text-decoration-none me-3"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-decoration-none me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-decoration-none"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
