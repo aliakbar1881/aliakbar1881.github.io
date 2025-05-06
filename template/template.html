@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ data.hero.title }}</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .progress-container { 
+            background-color: rgba(208, 186, 150, 0.248); 
+            width: 80%; 
+            border-radius: 15px;
+            margin: auto;
+        } 
+  
+        .progress { 
+            background-color: rgb(0, 160, 24); 
+            color: rgb(255, 255, 255);
+            line-height: 10%;
+            padding: 5%; 
+            font-size: 15px; 
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .hero-section {
+            background: url('images/dist_model_bg.png') center center/cover;
+            height: 100vh;
+            color: rgb(255, 255, 255);
+        }
+        .feature-icon {
+            font-size: 3rem;
+            color: #0d6efd;
+        }
+        .project-card {
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+        .footer {
+            background-color: #f8f9fa;
+        }
+        html {
+            font-family: 'Vazir', sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #202013;
+        }
+        html[lang="fa"] {
+            font-family: 'Vazir', sans-serif !important; /* Ensure Persian text uses this font */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">{{ data.hero.title }}</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">توصیف</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">ویژگی ها</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">گام نما</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">دور نما</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">ارتباط با ما</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<header class="hero-section d-flex align-items-center">
+    <div class="container text-center">
+        <h1 class="display-3 mb-4">{{ data.hero.title }}</h1>
+        <p class="lead mb-5">{{ data.hero.description }}</p>
+        <a href="{{ data.hero.button_link }}" class="btn btn-light btn-lg rounded-pill px-5">{{ data.hero.button_text }}</a>
+    </div>
+</header>
+
+<!-- Features Section -->
+<section id="features" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">ویژگی ها</h2>
+        <div class="row g-4">
+            {% for feature in data.features %}
+            <div class="col-md-4 text-center">
+                <div class="feature-icon text-center mb-3">
+                    <i class="{{ feature.icon }}"></i>
+                </div>
+                <h3 class="h4 mb-3">{{ feature.title }}</h3>
+                <p>{{ feature.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">گام‌نمای پروژه</h2>
+        <div class="row g-4">
+            {% for project in data.projects %}
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="h4 mb-3">{{ project.title }}</h5>
+                        <p class="card-text">{{ project.description }}</p>
+                        <div class="container text-center justify-content: center">
+                            وضعیت پیشرفت
+                            <div class="progress-container">
+                                <div class="progress" style="width: {{ project.progress }}%; padding-right: {{ project.progress }}%;">
+                                    {{ project.progress }}
+
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            <ul style="list-style-type: '✅ ' ;">
+                                {% for feature in project.features %}
+                                <li>{{ feature }}</li>
+                                {% endfor %}
+                            </ul>
+                            <ul style="list-style-type: ' ⏳ ' ;">
+                                {% for todo in project.todo %}
+                                <li>{{ todo }}</li>
+                                {% endfor %}
+                            </ul>
+                        </p>
+                        <a href="{{ project.github_link }}">
+                            <p class="card-text">ادرس گیت هاب</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">دورنمای پروژه</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="testimonial p-4">
+                                <p class="lead">{{ data.testimonial.text }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Call to Action -->
+<section class="py-5 bg-primary text-white">
+    <div class="container text-center">
+        <h2>ایا میخواهید در توسعه این پروژه مشارکت کنید؟</h2>
+        <p class="lead">منتظریم</p>
+        <a href="#contact" class="btn btn-light btn-lg mt-3">ارتباط با ما</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-6 text-md-end">
+                <a href="#" class="text-decoration-none me-3"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-decoration-none me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-decoration-none"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
